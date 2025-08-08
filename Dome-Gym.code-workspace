@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "folders": [
+    { "path": "GymManagement" },
+    { "path": "SessionReservation" },
+    { "path": "SharedKernel" },
+    { "path": "UserManagement" }
+  ],
+  "settings": {},
+  "launch": {},
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": []
+  }
+}
