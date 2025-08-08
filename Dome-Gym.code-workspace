@@ -7,7 +7,51 @@
     { "path": "UserManagement" }
   ],
   "settings": {},
-  "launch": {},
+  "launch": {
+    "compounds": [
+      {
+        "name": "Debug All APIs",
+        "configurations": [
+          "GymManagement.Api",
+          "SessionReservation.Api",
+          "UserManagement.Api"
+        ]
+      }
+    ],
+    "configurations": [
+      {
+    "name": "GymManagement.Api",
+    "type": "coreclr",
+    "request": "launch",
+    "program": "${workspaceFolder:GymManagement}/src/GymManagement.Api/bin/Debug/net8.0/GymManagement.Api.dll",
+    "args": [],
+    "cwd": "${workspaceFolder:GymManagement}/src/GymManagement.Api",
+    "stopAtEntry": false,
+    "console": "internalConsole"
+      },
+      {
+    "name": "SessionReservation.Api",
+    "type": "coreclr",
+    "request": "launch",
+    "program": "${workspaceFolder:SessionReservation}/src/SessionReservation.Api/bin/Debug/net8.0/SessionReservation.Api.dll",
+    "args": [],
+    "cwd": "${workspaceFolder:SessionReservation}/src/SessionReservation.Api",
+    "stopAtEntry": false,
+    "console": "internalConsole"
+      },
+      {
+    "name": "UserManagement.Api",
+    "type": "coreclr",
+    "request": "launch",
+    "program": "${workspaceFolder:UserManagement}/src/UserManagement.Api/bin/Debug/net8.0/UserManagement.Api.dll",
+    "args": [],
+    "cwd": "${workspaceFolder:UserManagement}/src/UserManagement.Api",
+    "stopAtEntry": false,
+    "console": "internalConsole"
+      }
+      // Puedes agregar más configuraciones aquí si tienes otros proyectos ejecutables
+    ]
+  },
   "tasks": {
     "version": "2.0.0",
     "tasks": []
