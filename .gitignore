@@ -366,3 +366,8 @@ FodyWeavers.xsd
 .vscode/
 !.vscode/launch.json
 .vscode/.myRedis.redis
+
+# SQLite temporary files
+*.db
+*.db-shm
+*.db-wal
